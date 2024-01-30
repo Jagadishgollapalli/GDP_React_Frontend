@@ -1,0 +1,40 @@
+/* Overview.module.css */
+.overviewContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    width: 18rem;
+    margin: 50px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-family: verdana;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    border-radius: 0;
+    width: 100%;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

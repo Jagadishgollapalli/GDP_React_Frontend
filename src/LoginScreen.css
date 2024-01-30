@@ -1,0 +1,55 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(1px);
+  opacity: 0.6; 
+}
+h5{
+  background-color: darkgreen;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+}
+
+.login-container .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 30% 0px 0px 50%; 
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card h5 {
+  color: #fcfcfc; /* Primary color, you can change this */
+  font-size: 24px;
+  font-weight: bold;
+}
+ 
+
+.btn{
+  border-radius: 0%;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover, you can change this */
+}
+/* Add any additional styling you need for the form */
