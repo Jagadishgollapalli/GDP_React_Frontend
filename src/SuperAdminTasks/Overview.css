@@ -12,7 +12,7 @@
     height: auto;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   }
   
   .card-img-top {
@@ -29,12 +29,51 @@
     font-weight: bold;
   }
   
-  .btn-primary {
+  /* .btn-primary {
+    
     border-radius: 0;
     width: 100%;
-  }
+  } */
   
-  .btn-primary:hover {
+  /* .btn-primary:hover {
     background-color: #0056b3;
-  }
+  } */
   
+
+/* CSS */
+.btn-primary {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn-primary:active,
+.btn-primary:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+

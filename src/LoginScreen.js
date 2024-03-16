@@ -28,6 +28,7 @@ function LoginScreen({ onUserRoleChange }) {
                 const redirectUrl = responseData.url;
                 const ChangeRole = responseData.role;
                 const userDetails = responseData.Name;
+                // console.log("hi" + userDetails);
 
                 if (ChangeRole) {
                     navigate(redirectUrl, { state: { userDetails, ChangeRole } });

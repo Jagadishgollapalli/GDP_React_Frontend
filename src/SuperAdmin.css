@@ -11,9 +11,7 @@ body {
     font-family: "verdana";
     font-weight: bold;
   }
-  h6{
-    background-color: #52DDF9;
-  }
+  
   main {
     display: flex;
     flex-wrap: nowrap;
