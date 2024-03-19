@@ -41,7 +41,7 @@ function SuperAdmin(props) {
     const handleChangeLogOut = () => {
         navigate("/Login");
     }
-    
+
     return (
         <div>
             <div className='container-fluid'>
@@ -78,41 +78,9 @@ function SuperAdmin(props) {
                                                         onClick={toggleOverview}>Overview</button></li>
                                                     <li><button className="btn btn-light" style={{ width: "25%", textAlign: "initial" }}
                                                         onClick={toggleUpload}>Upload</button></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li className="mb-1">
-                                            <button className="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                                                Schools
-                                            </button>
-                                            <div className="collapse" id="dashboard-collapse">
-                                                <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                                    <ul>
-                                                        <button className="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#acs-collapse" aria-expanded="false"><a href="#" className="link-dark rounded">Applied Computer Science</a></button>
-                                                        <div className="collapse" id="acs-collapse">
-                                                            <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 large">
-                                                                <li><button className="btn btn-light" style={{ width: "50%", textAlign: "initial" }}>Oops</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "50%", textAlign: "initial" }}>WEBapps</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "50%", textAlign: "initial" }}>Database</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "50%", textAlign: "initial" }}>Android</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "50%", textAlign: "initial" }}>IOS</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "50%", textAlign: "initial" ,  whiteSpace: "normal" }}>Machine Learning</button></li>
-                                                            </ul>
-                                                        </div>
-                                                    </ul>
-                                                    <ul>
-                                                        <button className="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Is-collapse" aria-expanded="false"><a href="#" className="link-dark rounded">Information Systems</a></button>
-                                                        <div className="collapse" id="Is-collapse">
-                                                            <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 large">
-                                                                <li><button className="btn btn-light" style={{ width: "60%", textAlign: "initial", whiteSpace: "normal" }}>Enterprise Networking</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "60%", textAlign: "initial" }}>Financial Modeling</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "60%", textAlign: "initial" }}>Cyber security</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "60%", textAlign: "initial" }}>Information Systems</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "60%", textAlign: "initial" }}>Business Intelligence</button></li>
-                                                                <li><button className="btn btn-light" style={{ width: "60%", textAlign: "initial" }}>IS Capstone</button></li>
-                                                            </ul>
-                                                        </div>
-                                                    </ul>
+                                                    <li><button className="btn btn-success" style={{ width: "25%", textAlign: "initial" }}>
+                                                        Schools
+                                                    </button></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -140,7 +108,7 @@ function SuperAdmin(props) {
                 <div className='container-fluid'>
                     <div className="row" style={{ height: "60vh" }}>
                         <div className="col d-flex justify-content-center align-items-center">
-                            <Overview userState={state}/>
+                            <Overview userState={state} />
                         </div>
                     </div>
                 </div>

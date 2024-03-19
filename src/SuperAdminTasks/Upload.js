@@ -8,7 +8,8 @@ function Upload(props) {
         setSelectedFile(event.target.files[0]);
     };
 
-    const fileUploadHandler = async () => {
+    const fileUploadHandler = async (e) => {
+        e.preventDefault(); // Prevent default form submission behavior
         const formData = new FormData();
         formData.append("file", selectedFile);
         try {
@@ -23,6 +24,7 @@ function Upload(props) {
             alert("Error uploading file");
         }
     };
+    
     return (
         <div>
             <div className="container">
